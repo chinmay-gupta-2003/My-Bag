@@ -1,14 +1,17 @@
+import React, { useState } from 'react';
 import Header from './components/Header';
 import AddItemForm from './components/AddItemForm';
 import BagList from './components/BagList';
 import BagSummary from './components/BagSummary';
 
 function App() {
+  const [items, setItems] = useState([]);
+
   return (
     <div className="app">
       <Header />
-      <AddItemForm />
-      <BagList />
+      <AddItemForm setItems={setItems} />
+      <BagList items={items} />
       <BagSummary />
     </div>
   );

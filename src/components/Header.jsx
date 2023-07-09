@@ -2,8 +2,8 @@ import React from 'react';
 
 function Header() {
   return (
-    <div className="alignCenter">
-      <h1>🤎 my bag 💼</h1>
+    <div>
+      <h1>🌴 my backpack 💼</h1>
     </div>
   );
 }
