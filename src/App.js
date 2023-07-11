@@ -11,7 +11,7 @@ function App() {
     <div className="app">
       <Header />
       <AddItemForm setItems={setItems} />
-      <BagList items={items} />
+      <BagList setItems={setItems} items={items} />
       <BagSummary />
     </div>
   );
