@@ -23,6 +23,7 @@ function Item({ item, setItems }) {
     <li key={item.id}>
       <input
         type="checkbox"
+        checked={item.packed}
         value={item.packed}
         onClick={() => {
           updateItem(item.id);
