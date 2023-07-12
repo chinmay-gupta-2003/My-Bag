@@ -12,7 +12,7 @@ function App() {
       <Header />
       <AddItemForm setItems={setItems} />
       <BagList setItems={setItems} items={items} />
-      <BagSummary />
+      <BagSummary items={items} />
     </div>
   );
 }
