@@ -40,6 +40,13 @@ function BagList({ items, setItems }) {
           <option value="packed">Sort by Packed Status</option>
           <option value="description">Sort by Description</option>
         </select>
+        <button
+          onClick={() => {
+            setItems([]);
+          }}
+        >
+          Clear List
+        </button>
       </div>
     </div>
   );
